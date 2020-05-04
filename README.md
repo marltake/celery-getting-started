@@ -16,4 +16,6 @@ https://docs.celeryproject.org/en/latest/userguide/workers.html#revoke-revoking-
 ## stop and restart client
 
 task can be recovered from (result).id?
+https://docs.celeryproject.org/en/latest/userguide/calling.html
+https://docs.celeryproject.org/en/latest/reference/celery.result.html#celery.result.AsyncResult
 
