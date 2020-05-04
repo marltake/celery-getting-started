@@ -3,5 +3,5 @@ RUN useradd celery
 WORKDIR /app
 RUN pip install celery redis
 COPY . .
-CMD ["celery", "-A", "tasks", "worker", "--loglevel=info", "--uid", "celery"]
+CMD ["celery", "-A", "proj", "worker", "-l", "info", "--uid", "celery"]
 
