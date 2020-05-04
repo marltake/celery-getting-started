@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+ celery:
+   image: celery
+   build:
+     context: celery
+   command: ["celery", "-A", "tasks", "worker", "--loglevel=info"]
+   depends_on:
+     - redis
+ redis:
+   image: redis
+
