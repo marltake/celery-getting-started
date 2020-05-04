@@ -4,7 +4,6 @@ services:
    image: celery
    build:
      context: celery
-   command: ["celery", "-A", "tasks", "worker", "--loglevel=info"]
    depends_on:
      - redis
  redis:
